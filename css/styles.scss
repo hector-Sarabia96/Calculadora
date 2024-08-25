@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(45deg, #7c62f0, #fffde7);
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .calculadora {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #7c62f0;
+    background-color: rgba(255, 255, 255, 0.623);
+  
+    #pantalla {
+      color: #091c20;
+      margin: 20px 10px;
+      height: 90px;
+      width: auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      background-color: rgba(99, 99, 99, 0.089);
+      border-radius: 5px;
+      padding-right: 10px;
+    }
+  
+    #borrar {
+      background-color: #392883;
+      color: #bcacff;
+    }
+  
+    .btn-numero {
+      background-color: #286686;
+      color: #d3c8ff;
+    }
+  
+    .btn-operador {
+      background-color: #504e61;
+      color: #9a83ff;
+    }
+  
+    .btn-igual {
+      background-color: #0c4638;
+      color: #fff;
+      height: 130px;
+      border-radius: 30px;
+    }
+  
+    //tema dark
+    &.dark {
+      background-color: rgb(15, 15, 15);
+      #pantalla {
+        color: #fff;
+      }
+      #borrar {
+        background-color: #252a52;
+        color: #000;
+      }
+      .btn-numero {
+        background-color: #9dd7f7;
+        color: #000;
+      }
+      .btn-operador {
+        background-color: #837cc7;
+        color: #000;
+      }
+      .btn-igual {
+        background-color: #4da590;
+        color: #000;
+      }
+    }
+  }
+  
+  .tema-toggler {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 30px;
+      width: 30px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: #333;
+      z-index: -1;
+    }
+  }
+  
+  .tema-toggler.active {
+    color: #333;
+    &::before {
+      background-color: #fff;
+    }
+  }
+  button {
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  

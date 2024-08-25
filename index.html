@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Colorida</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./img/calculadora.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculadora dark">
+        <div class="tema-toggler active">
+          <i class="toggler-icon"></i>
+        </div>
+        <div class="pantalla-screen">
+          <div id="pantalla"></div>
+        </div>
+        <div class="buttons">
+          <table>
+            <tr>
+              <td><button class="btn-operador" id="borrar">C</button></td>
+              <td><button class="btn-operador" id="/">/</button></td>
+              <td><button class="btn-operador" id="*">*</button></td>
+              <td><button class="btn-operador" id="backspace"><</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn-numero" id="7">7</button></td>
+              <td><button class="btn-numero" id="8">8</button></td>
+              <td><button class="btn-numero" id="9">9</button></td>
+              <td><button class="btn-operador" id="-">-</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn-numero" id="4">4</button></td>
+              <td><button class="btn-numero" id="5">5</button></td>
+              <td><button class="btn-numero" id="6">6</button></td>
+              <td><button class="btn-operador" id="+">+</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn-numero" id="1">1</button></td>
+              <td><button class="btn-numero" id="2">2</button></td>
+              <td><button class="btn-numero" id="3">3</button></td>
+              <td rowspan="2">
+                <button class="btn-igual" id="igual">=</button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="btn-operador" id=".">.</button></td>
+              <td><button class="btn-numero" id="0">0</button></td>
+              <td><button class="btn-numero" id="00">00</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
